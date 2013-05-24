@@ -47,3 +47,4 @@ Z:\Documents\AI.HighCharter\AI.HighCharter.Web\bin\DotNetOpenAuth.OpenId.xml
 Z:\Documents\AI.HighCharter\AI.HighCharter.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 Z:\Documents\AI.HighCharter\AI.HighCharter.Web\obj\Debug\AI.HighCharter.Web.dll
 Z:\Documents\AI.HighCharter\AI.HighCharter.Web\obj\Debug\AI.HighCharter.Web.pdb
+Z:\Documents\AI.Highcharter\AI.HighCharter.Web\obj\Debug\AI.HighCharter.Web.csprojResolveAssemblyReference.cache

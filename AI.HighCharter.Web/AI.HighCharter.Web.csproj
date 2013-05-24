@@ -248,6 +248,8 @@
     <Content Include="Scripts\Graphs\graphs.line.js" />
     <Content Include="Scripts\Graphs\namespace.js" />
     <Content Include="Scripts\Graphs\options.js" />
+    <None Include="Properties\PublishProfiles\AIHighcharter - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\AIHighcharter - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\Highcharts\exporting.js" />
     <Content Include="Scripts\Highcharts\highcharts.src.js" />
