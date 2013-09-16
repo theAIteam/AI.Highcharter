@@ -1,21 +1,36 @@
 ﻿html, body {
+    font-family: 'latin_modern_roman10_regular';
     height: 100%;
+}
+
+body {
+    padding-top: 70px;
+}
+h2 {
+    
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
 }
 
 #wrap {
-    min-height: 100%;
     height: auto !important;
-    height: 100%;
+    height: auto !important;
     margin: 0 auto -30px;
+    min-height: 100%;
 }
 
 .logo {
-    width: 18px;
-    height: 18px;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
 }
-.push {
-    height: 30px;
-}
+
+.push { height: 30px; }
 
 .chart {
     height: 300px;
@@ -23,6 +38,10 @@
 }
 
 .code {
-    font-size: 9pt;
-    font-family: "courier";
+    font-family: "texgyrecursorregular";
+    font-size: 10pt;
+}
+
+.navbar-fixed-bottom {
+    margin: 2px;
 }

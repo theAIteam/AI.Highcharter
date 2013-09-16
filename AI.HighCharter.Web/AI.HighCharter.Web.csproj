@@ -134,7 +134,6 @@
   <ItemGroup>
     <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
-    <None Include="App_Start\HighCharterConfig.cs.pp" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\HighCharterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

@@ -3,6 +3,9 @@
     height: 100%;
 }
 
+body {
+    padding-top: 70px;
+}
 h2 {
     
     font-size: 16px;
@@ -22,8 +25,8 @@ h3 {
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     margin-right: 5px;
 }
 
