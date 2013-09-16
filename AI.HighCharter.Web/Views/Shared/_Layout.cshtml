@@ -1,43 +1,47 @@
-﻿<!DOCTYPE html>
+﻿@using AI.HighCharter.Web.HtmlHelpers
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>@ViewBag.Title - My ASP.NET MVC Application</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css", "~/content/bootstrap")
+        @Styles.Render("~/content/bootstrap/base")
+        @Styles.Render("~/content/bootstrap/theme")
+        @Styles.Render("~/Content/fonts")
+        @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
     </head>
     <body>
-        <div id="wrap">
-            
-            <div class="navbar navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="brand" href="#"><img class="logo" src="~/Images/ai.png" /> Highcharter</a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="http://www.theaiteam.com">Contact</a></li>
-                            </ul>
-                        </div>
+            <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/Home"><img class="logo" src="~/Images/ai.png" /> Highcharter</a>
+                    </div>
+                    <div class="navbar-collapse collapse"  role="navigation">
+                        <ul class="nav navbar-nav">
+                            @Html.MenuItem("Home", "Index", "Home")
+                            @Html.MenuItem("About", "About", "Home")
+                            <li><a href="mailto:paul.kavanaugh@theaiteam.com">Contact</a></li>
+                        </ul>
+
+                        <a class="navbar-brand pull-right" href="www.theaiteam.com">Architecting Innovation LLC</a>
+
                     </div>
                 </div>
-            </div>
+            </header>
+        
             
-            <div class="container">
+        <div class="container">
                 
-                <div class="push"></div>
-                <div class="push"></div>
-                @RenderBody()
-                
-            </div>
             <div class="push"></div>
-        </div>
+            <div class="push"></div>
+            @RenderBody()
+                
+        </div>s
         
         @Scripts.Render("~/bundles/jquery",
-                        "~/bundles/highcharter", 
+                        "~/bundles/highcharter",
                         "~/bundles/bootstrap")
         @RenderSection("scripts", required: false)
     </body>

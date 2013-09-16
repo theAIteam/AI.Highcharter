@@ -15,7 +15,6 @@ namespace AI.HighCharter.Web.Controllers.Api
             var rand = new Random();
             return new HighchartsModel()
             {
-                Title = "BarChart",
                 Categories = CreateCategories(10).ToList(),
                 Series = new List<HighchartsSeries>()
                         {

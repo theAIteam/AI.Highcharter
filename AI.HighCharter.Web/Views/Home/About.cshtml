@@ -2,4 +2,31 @@
     ViewBag.Title = "About";
 }
 
-<h2>About</h2>
+<h2>AI Highcharter</h2>
+
+<h3>The History</h3>
+I build a lot of dashboards, especially for the healthcare industry. These dashboards come with a lot of data and a lot of different data displays. I need a way to quickly query the data warehouse, transform the data,
+and show it in one or many graphical displays. I got pretty tired writing a javascript file everytime. AI Highcharter is my solution, and it allows me to add a graph in ONE line of html. It saves me hours of development
+time every time I have to add a graph or change the type of graph I present for a particular set of data. 
+
+<h3>The Basics</h3>
+<p>AI Highcharter is all about one thing - speeding up the process of getting a chart into your site, and limiting the amount of client-side code required to do so.
+    Using AI Highcharter, one of the pre-packaged charts can be added with one simple line of html consisting of a div with a couple of class and data attributes. The css classes are necessary to 
+    render using AI Highcharter, the first is 'chart' this simply tells AI Highcharter to process attempt to find a matching chart type in the graphs.types javascript namespace. The second css class
+    indicates the name of the graph in the graphs.types namespace (for example, 'line' or 'bar'). Two data attributes are also used in AI Highcharter. The first data attribute
+    points to a web service endpoint that returns a HighchartsModel.cs serialized as JSON, the second (optional) data attribute contains the title of the chart. In the future we can begin to add 
+    additional data attributes to further customize that charts. In the case that charts within a container need to be reprocessed, updated, or were created after document.ready is fired, you just 
+    need to call graphs.bind($('container-selector')). That's it, that's all it takes to quickly and easily display a highcharts graph in your UI. And it's all asyncronous.
+</p>
+
+<h3>Customization</h3>
+<p>
+    AI Highcharter also allows you the ability to create custom charts by adding to the graphs.types javascript namespace. Currently, AI Highcharter is package with simple charts for bar, column
+    line, and spline charts, but anyone can easily add any other type of chart imagineable. The idea is that AI Highcharter is open source so that everyone can take advantage of custom charts created by the 
+    community.
+</p>
+
+<h3>Web Service</h3>
+AI Highcharter requires a web service that return JSON representations of HighchartsModel.cs. The HighchartsModel simply consists of a
+of string for the Categories and a list of HighchartsSeries for the series data. A simple mapper can be created to translate any object or collection into a HighchartsModel.
+

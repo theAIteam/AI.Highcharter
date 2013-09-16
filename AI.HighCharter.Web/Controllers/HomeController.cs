@@ -13,5 +13,9 @@ namespace AI.HighCharter.Web.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
